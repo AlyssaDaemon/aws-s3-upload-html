@@ -32,3 +32,11 @@ ExposeHeader etag is required so you can grab the etag value from the request.
 Standard boto3 AWS env vars apply here too.
 
 ## Some considerations
+* This is all standard vanilla JS, not a robust and tested library.
+* This code is somewhat fragile, *do not let this go to production, I'm not maintaining this*
+* Safari seems to choke if the parts are too big (around 500MB) and refuses on CORS (despite FS being fine)
+* Web standards move fairly quickly and there are quirks of browsers, the longer this sits unattended the further from optimal it becomes.
+
+## TODOs
+* [ ] Finish the CSS so the progress bars at least look better than they do.
+* [ ] Find a way to provide better feedback on the upload process, currently it seems FS and Safari don't report till the transaction is done.
