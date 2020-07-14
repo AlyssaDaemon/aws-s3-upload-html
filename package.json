@@ -1,0 +1,14 @@
+{
+  "name": "aws-s3-upload-html",
+  "version": "1.0.0",
+  "main": "express.js",
+  "repository": "git@github.com:AlyssaDaemon/aws-s3-upload-html.git",
+  "author": "Alyssa Herzog <alyssa@alyssadaemon.io>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.713.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
