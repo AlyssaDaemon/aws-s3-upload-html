@@ -31,6 +31,15 @@ ExposeHeader etag is required so you can grab the etag value from the request.
 
 Standard boto3 AWS env vars apply here too.
 
+## Running
+Both the Python and Node code do the same things, so there's no need for a difference. Also make sure that your AWS creds are on the machine / are active before you run the command as both servers require access to AWS and the bucket you wish to upload to.
+```bash
+$ BUCKET_NAME=some-bucket-name node express.js
+# or
+$ BUCKET_NAME=some-buekt-name python3 server.py
+```
+Then navigate your browser to: [http://localhost:9876/](http://localhost:9876/)
+
 ## Some considerations
 * This is all standard vanilla JS, not a robust and tested library.
 * This code is somewhat fragile, *do not let this go to production, I'm not maintaining this*
