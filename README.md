@@ -1,3 +1,6 @@
+> [!WARNING]
+> This is now read only, please do not use it for anything important.
+
 # AWS S3 Upload HTML POC
 This was just a fun little project to see if one could support multipart uploads (and single part uploads) in HTML5.
 
@@ -32,7 +35,7 @@ ExposeHeader etag is required so you can grab the etag value from the request.
 Standard boto3 AWS env vars apply here too.
 
 ## Running
-Both the Python and Node code do the same things, so there's no need for a difference. Also make sure that your AWS creds are on the machine / are active before you run the command as both servers require access to AWS and the bucket you wish to upload to.
+Both the Python and Node code do the same things, so there's no difference. Also make sure that your AWS creds are on the machine / are active before you run the command as both servers require access to AWS and the bucket you wish to upload to.
 ```bash
 $ BUCKET_NAME=some-bucket-name node express.js
 # or
